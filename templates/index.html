@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Results</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="upload-section" id="upload-section">
+            <label for="file-upload">Перетяни файл или нажми чтобы выбрать</label>
+            <input id="file-upload" type="file" />
+        </div>
+        <div class="url-section">
+            <label for="url-input">Вставьте URL для анализа</label>
+            <input id="url-input" type="text" placeholder="https://example.com" />
+            <button id="analyze-url-btn">Анализировать URL</button>
+        </div>
+        <div id="loading" class="loading">Загрузка...</div>
+        <div id="notification" class="notification"></div>
+        <div id="file-name" class="file-name"></div>
+        <div class="chart-container">
+            <div class="chart-wrapper">
+                <canvas id="joy-chart" class="chart"></canvas>
+                <div class="chart-title">Joy</div>
+            </div>
+            <div class="chart-wrapper">
+                <canvas id="surprise-chart" class="chart"></canvas>
+                <div class="chart-title">Surprise</div>
+            </div>
+            <div class="chart-wrapper">
+                <canvas id="sadness-chart" class="chart"></canvas>
+                <div class="chart-title">Sadness</div>
+            </div>
+            <div class="chart-wrapper">
+                <canvas id="disgust-chart" class="chart"></canvas>
+                <div class="chart-title">Disgust</div>
+            </div>
+            <div class="chart-wrapper">
+                <canvas id="anger-chart" class="chart"></canvas>
+                <div class="chart-title">Anger</div>
+            </div>
+            <div class="chart-wrapper">
+                <canvas id="fear-chart" class="chart"></canvas>
+                <div class="chart-title">Fear</div>
+            </div>
+            <div class="chart-wrapper">
+                <canvas id="neutral-chart" class="chart"></canvas>
+                <div class="chart-title">Neutral</div>
+            </div>
+            <!-- <div class="chart-wrapper">
+                <canvas id="positions-chart" class="chart"></canvas>
+                <div class="chart-title">Emotions in Text</div>
+            </div> -->
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../static/script.js"></script>
+</body>
+</html>

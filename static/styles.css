@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    font-family: 'Press Start 2P', sans-serif !important;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.url-section {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px dashed #007BFF;
+    border-radius: 8px;
+    background-color: #e9ecef;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.upload-section {
+    margin-bottom: 20px;
+    padding: 80px;
+    border: 2px dashed #007BFF;
+    border-radius: 8px;
+    background-color: #e9ecef;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.upload-section input[type="file"], .url-section input[type="text"] {
+    display: none;
+}
+.upload-section.dragover {
+    background-color: #d0e7ff;
+}
+.url-section input[type="text"], .url-section button {
+    display: inline-block;
+    margin: 10px 5px;
+}
+.loading {
+    display: none;
+    font-size: 20px;
+    color: #007BFF;
+    margin-top: 20px;
+}
+.notification {
+    display: none;
+    font-size: 16px;
+    color: red;
+    margin-top: 20px;
+}
+.file-name {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+.chart-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.chart-wrapper {
+    flex: 1 0 21%;
+    text-align: center;
+    margin: 10px;
+    min-width: 150px;
+    max-width: 200px;
+}
+.chart {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+}
+.chart-title {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+    margin-right: 46px;
+}
+@media (max-width: 768px) {
+    .chart-wrapper {
+        flex: 1 0 45%;
+    }
+}
+@media (max-width: 480px) {
+    .chart-wrapper {
+        flex: 1 0 100%;
+    }
+}
